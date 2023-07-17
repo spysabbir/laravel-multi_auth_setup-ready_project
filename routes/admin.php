@@ -13,8 +13,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
     Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
-    Route::patch('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+    Route::patch('/profile/update', [ProfileController::class, 'profileUpdate'])->name('profile.update');
+    Route::put('password/update', [ProfileController::class, 'passwordUpdate'])->name('password.update');
     Route::delete('/profile/destroy', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    Route::put('password/update', [PasswordController::class, 'update'])->name('password.update');
 });
