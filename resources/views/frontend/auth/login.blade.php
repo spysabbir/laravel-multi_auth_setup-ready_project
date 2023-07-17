@@ -27,14 +27,14 @@
         </div>
 
         <!-- Remember Me -->
-        <div class="block mt-4">
+        <div class="">
             <label for="remember_me" class="">
                 <input id="remember_me" type="checkbox" class="" name="remember">
                 <span class="">Remember me</span>
             </label>
         </div>
 
-        <div class="flex items-center justify-end mt-4">
+        <div class="">
             @if (Route::has('password.request'))
                 <a class="" href="{{ route('password.request') }}">
                     Forgot your password?
