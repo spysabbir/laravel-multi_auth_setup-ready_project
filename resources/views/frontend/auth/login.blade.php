@@ -8,7 +8,6 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
-        <!-- Email Address -->
         <div>
             <label for="email">Email</label>
             <input id="email" class="" type="email" name="email" value="{{ old('email') }}" />
@@ -17,7 +16,6 @@
             @enderror
         </div>
 
-        <!-- Password -->
         <div>
             <label for="password">Password</label>
             <input id="password" class="" type="password" name="password" />
@@ -26,7 +24,6 @@
             @enderror
         </div>
 
-        <!-- Remember Me -->
         <div class="">
             <label for="remember_me" class="">
                 <input id="remember_me" type="checkbox" class="" name="remember">

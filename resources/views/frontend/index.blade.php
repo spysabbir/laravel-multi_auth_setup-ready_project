@@ -6,6 +6,4 @@
 
 @include('frontend.layouts.navigation')
 
-logged in!
-
 @endsection

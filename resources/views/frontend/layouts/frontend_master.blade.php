@@ -1,10 +1,8 @@
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+{{-- <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-<meta name="csrf-token" content="{{ csrf_token() }}">
+<meta name="csrf-token" content="{{ csrf_token() }}"> --}}
 
-<title>{{ config('app.name', 'Laravel') }}</title>
-
-@yield('title')
+<title>{{ env('APP_NAME') }} | @yield('title')</title>
 
 @yield('content')
